@@ -361,7 +361,7 @@ section { position: relative; }
 .album-section { background: var(--bg-dark); }
 .album-grid {
     display: grid;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 95px 1fr;
     gap: 56px;
     align-items: start;
 }
@@ -1044,7 +1044,7 @@ section { position: relative; }
 /* ═══════════ RESPONSIVE ═══════════ */
 @media (max-width: 1024px) {
     .album-grid {
-        grid-template-columns: 150px 1fr;
+        grid-template-columns: 75px 1fr;
         gap: 40px;
     }
     .gallery-grid {
@@ -1076,7 +1076,7 @@ section { position: relative; }
         gap: 32px;
     }
     .album-cover-wrap {
-        max-width: 160px;
+        max-width: 80px;
         margin: 0 auto;
     }
 
