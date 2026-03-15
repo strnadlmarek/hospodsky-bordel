@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapela — Hospodský Bordel</title>
+    <meta name="description" content="Hospodský Bordel — energická devítičlenná kapela hrající pop folkové písně vlastní i převzaté tvorby z Nového Jičína.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>body { padding-top: 80px; }</style>
+</head>
+<body>
+
+    <!-- ════════ NAVBAR ════════ -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="index.html">Hospodský Bordel</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="koncerty.html">Koncerty</a></li>
+            <li><a href="hudba.html">Hudba</a></li>
+            <li><a href="kapela.html">Kapela</a></li>
+            <li><a href="fotky.html">Fotky</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a class="nav-cta" href="vstupenky.html">Vstupenky</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html" onclick="closeMobile()">Úvod</a>
+        <a href="koncerty.html" onclick="closeMobile()">Koncerty</a>
+        <a href="hudba.html" onclick="closeMobile()">Hudba</a>
+        <a href="kapela.html" onclick="closeMobile()">Kapela</a>
+        <a href="fotky.html" onclick="closeMobile()">Fotky</a>
+        <a href="kontakt.html" onclick="closeMobile()">Kontakt</a>
+        <a class="nav-cta" href="vstupenky.html" onclick="closeMobile()">Vstupenky</a>
+    </div>
+
+    <!-- ════════ KAPELA ════════ -->
+    <section class="about-section" id="about">
+        <div class="section-padding">
+            <div class="section-header fade-in">
+                <div class="accent-line"></div>
+                <h2>O kapele</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-photo-wrap fade-in">
+                    <div class="about-photo">
+                        <img src="foto-kapely-hraji.jpg" alt="Hospodský Bordel na pódiu">
+                    </div>
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Hospodský Bordel je energická parta hudebníků hrající pop folkové písně vlastní i převzaté tvorby.</h3>
+                    <p>Jejich netradiční název vznikl při prvních koncertech v hospodách, kde se naplno projevil jejich divoký temperament a osobité pojetí zábavy. Kapela již několik let uzavírá slavnosti a městské oslavy v Moravskoslezském kraji a Jihomoravském kraji.</p>
+                    <p>Devítičlenná kapela hraje písně známých českých interpretů a postupně přidává vlastní tvorbu. Těšit se můžete na písně od Jelena, Čechomoru, Divokého Billa nebo kapely Kabát.</p>
+                </div>
+            </div>
+
+            <div class="about-history fade-in">
+                <div class="about-history-header">
+                    <div class="accent-line"></div>
+                    <h3>Jak to začalo</h3>
+                </div>
+                <p>Kapela Hospodský Bordel vznikla v roce 2021 a její členové navázali na úspěšné období vystupování v hospodách. Prvním velkým koncertem kapely byly Slavnosti Města Nový Jičín v roce 2022, kde se na zámeckém náměstí sešel v té době překvapivý počet fanoušků do té doby neznámé skupiny muzikantů.</p>
+                <p>Nový Jičín kapele dal velký prostor — kapela se objevila jako poslední vystupující na Vánočních trzích a zakončila Městské Slavnosti v roce 2023. Tyto koncerty ukázaly velkou oblíbenost u lokálního publika. V roce 2024 kapela vystoupila na Zlínském Majálesu, Brněnské oslavě jara, hudebním festivalu a v létě zahrála přibližně na patnácti dnech obce a obecních slavnostech v okolí Nového Jičína.</p>
+                <div class="about-name-grid">
+                    <div class="about-name-block">
+                        <span class="about-name-word">"Hospodský"</span>
+                        <p>Připomíná začátky kapely a vystupování v hospodách, kde vše začalo.</p>
+                    </div>
+                    <div class="about-name-block">
+                        <span class="about-name-word">"Bordel"</span>
+                        <p>Název je hovorový výraz ukazující na divokou náturu členů kapely a pozitivní energii, kterou na koncertech návštěvníci často vyzdvihují.</p>
+                    </div>
+                </div>
+
+            <div class="members-section fade-in">
+                <div class="about-history-header">
+                    <div class="accent-line"></div>
+                    <h3>Členové</h3>
+                </div>
+                <div class="members-grid">
+                    <div class="member-card">
+                        <img src="members/petaKnobloch.jpeg" alt="Petr Knobloch" class="member-photo">
+                        <p class="member-name">Petr Knobloch</p>
+                        <p class="member-instruments">Bicí<br>Banjo<br>Kytara</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="members/maraStrnadl.jpeg" alt="Marek Strnadl" class="member-photo">
+                        <p class="member-name">Marek Strnadl</p>
+                        <p class="member-instruments">Cajon<br>Kytara</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="members/vojtaKysely.jpeg" alt="Vojta Kyselý" class="member-photo">
+                        <p class="member-name">Vojta Kyselý</p>
+                        <p class="member-instruments">Kytara</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="members/tomasPaulo.jpeg" alt="Tomáš Pauló" class="member-photo">
+                        <p class="member-name">Tomáš Pauló</p>
+                        <p class="member-instruments">Kytara<br>Banjo</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="members/dejvRajnoch.jpeg" alt="David Rajnoch" class="member-photo">
+                        <p class="member-name">David Rajnoch</p>
+                        <p class="member-instruments">Piano</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="members/honzaDemel.jpeg" alt="Jan Demel" class="member-photo">
+                        <p class="member-name">Jan Demel</p>
+                        <p class="member-instruments">Housle<br>Mandolína</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="members/bivojKudelka.jpeg" alt="Bivoj Kudělka" class="member-photo">
+                        <p class="member-name">Bivoj Kudělka</p>
+                        <p class="member-instruments">Housle</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="members/adaProchazkova.jpeg" alt="Adéla Lysková" class="member-photo">
+                        <p class="member-name">Adéla Lysková</p>
+                        <p class="member-instruments">Zpěv</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="members/marekVaculik.jpeg" alt="Marek Vaculík" class="member-photo">
+                        <p class="member-name">Marek Vaculík</p>
+                        <p class="member-instruments">Baskytara</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer-copy">&copy; 2026 Hospodský Bordel. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <!-- ════════ SCRIPTS ════════ -->
+    <script>
+        // ── Hamburger Toggle ──
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        function closeMobile() {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ── Navbar Shrink on Scroll ──
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // ── Scroll Fade-In Animation ──
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vstupenky — Hospodský Bordel</title>
+    <meta name="description" content="Vstupenky na koncerty Hospodského Bordelu — nenech to na poslední chvíli.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>body { padding-top: 80px; }</style>
+</head>
+<body>
+
+    <!-- ════════ NAVBAR ════════ -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="index.html">Hospodský Bordel</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="koncerty.html">Koncerty</a></li>
+            <li><a href="hudba.html">Hudba</a></li>
+            <li><a href="kapela.html">Kapela</a></li>
+            <li><a href="fotky.html">Fotky</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a class="nav-cta" href="vstupenky.html">Vstupenky</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html" onclick="closeMobile()">Úvod</a>
+        <a href="koncerty.html" onclick="closeMobile()">Koncerty</a>
+        <a href="hudba.html" onclick="closeMobile()">Hudba</a>
+        <a href="kapela.html" onclick="closeMobile()">Kapela</a>
+        <a href="fotky.html" onclick="closeMobile()">Fotky</a>
+        <a href="kontakt.html" onclick="closeMobile()">Kontakt</a>
+        <a class="nav-cta" href="vstupenky.html" onclick="closeMobile()">Vstupenky</a>
+    </div>
+
+    <!-- ════════ VSTUPENKY ════════ -->
+    <section class="shows-section" id="tickets">
+        <div class="section-padding">
+            <div class="section-header fade-in">
+                <div class="accent-line"></div>
+                <h2>Vstupenky</h2>
+                <p>Nenech to na poslední chvíli</p>
+            </div>
+            <div class="shows-list">
+                <div class="show-card fade-in">
+                    <div class="show-date">
+                        <div class="day">29</div>
+                        <div class="month">Srp</div>
+                    </div>
+                    <div class="show-info">
+                        <h4>Zakončení léta s HB 2026</h4>
+                        <p>Hospoda Nové Slunce · Nový Jičín · 14:00</p>
+                    </div>
+                    <div class="show-tickets">
+                        <a class="ticket-btn smsticket" href="#" target="_blank" rel="noopener">SMSticket</a>
+                    </div>
+                </div>
+                <div class="show-card fade-in">
+                    <div class="show-date">
+                        <div class="day">06</div>
+                        <div class="month">Lis</div>
+                    </div>
+                    <div class="show-info">
+                        <h4>Metro Music Bar</h4>
+                        <p>Brno · 20:00</p>
+                    </div>
+                    <div class="show-tickets">
+                        <a class="ticket-btn smsticket" href="#" target="_blank" rel="noopener">SMSticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer-copy">&copy; 2026 Hospodský Bordel. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <!-- ════════ SCRIPTS ════════ -->
+    <script>
+        // ── Hamburger Toggle ──
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        function closeMobile() {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ── Navbar Shrink on Scroll ──
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // ── Scroll Fade-In Animation ──
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

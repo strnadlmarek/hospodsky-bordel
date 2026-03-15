@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koncerty — Hospodský Bordel</title>
+    <meta name="description" content="Nadcházející koncerty kapely Hospodský Bordel. Přijďte si užít naši energii naživo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>body { padding-top: 80px; }</style>
+</head>
+<body>
+
+    <!-- ════════ NAVBAR ════════ -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="index.html">Hospodský Bordel</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="koncerty.html">Koncerty</a></li>
+            <li><a href="hudba.html">Hudba</a></li>
+            <li><a href="kapela.html">Kapela</a></li>
+            <li><a href="fotky.html">Fotky</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a class="nav-cta" href="vstupenky.html">Vstupenky</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html" onclick="closeMobile()">Úvod</a>
+        <a href="koncerty.html" onclick="closeMobile()">Koncerty</a>
+        <a href="hudba.html" onclick="closeMobile()">Hudba</a>
+        <a href="kapela.html" onclick="closeMobile()">Kapela</a>
+        <a href="fotky.html" onclick="closeMobile()">Fotky</a>
+        <a href="kontakt.html" onclick="closeMobile()">Kontakt</a>
+        <a class="nav-cta" href="vstupenky.html" onclick="closeMobile()">Vstupenky</a>
+    </div>
+
+    <!-- ════════ KONCERTY ════════ -->
+    <section class="shows-section" id="shows">
+        <div class="section-padding">
+            <div class="section-header fade-in">
+                <div class="accent-line"></div>
+                <h2>Koncerty</h2>
+            </div>
+            <!-- KVĚTEN -->
+            <div class="month-group">
+                <h3 class="month-heading">Květen</h3>
+                <div class="shows-list">
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">07</div>
+                            <div class="month">Kvě</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Zlín</h4>
+                            <p>Majáles UTB · 23:00</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">30</div>
+                            <div class="month">Kvě</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Tichá</h4>
+                            <p>Kácení májky · 21:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ČERVEN -->
+            <div class="month-group">
+                <h3 class="month-heading">Červen</h3>
+                <div class="shows-list">
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">06</div>
+                            <div class="month">Čvn</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Mošnov</h4>
+                            <p>Gulášfest · 17:00</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">06</div>
+                            <div class="month">Čvn</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Lichnov</h4>
+                            <p>Den obce · 23:00</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">13</div>
+                            <div class="month">Čvn</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Kunín</h4>
+                            <p>Den obce · 18:30</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">19</div>
+                            <div class="month">Čvn</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Festival Olomouc</h4>
+                            <p>Festival Olomouc (o)žije · 20:00</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">20</div>
+                            <div class="month">Čvn</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Bílovec</h4>
+                            <p>Den města · 20:00</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">27</div>
+                            <div class="month">Čvn</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Pustějov</h4>
+                            <p>Den obce · 18:00</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">27</div>
+                            <div class="month">Čvn</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Starý Jičín</h4>
+                            <p>Festival pod hradem · 22:30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ČERVENEC -->
+            <div class="month-group">
+                <h3 class="month-heading">Červenec</h3>
+                <div class="shows-list">
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">11</div>
+                            <div class="month">Čvc</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Mořkov</h4>
+                            <p>Den obce · 17:30</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">25</div>
+                            <div class="month">Čvc</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Spálov</h4>
+                            <p>Spálovské hody · 19:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SRPEN -->
+            <div class="month-group">
+                <h3 class="month-heading">Srpen</h3>
+                <div class="shows-list">
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">29</div>
+                            <div class="month">Srp</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Nový Jičín</h4>
+                            <p>Zakončení léta s HB 2026 · Hospoda Nové Slunce · 14:00</p>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#" target="_blank" rel="noopener" class="ticket-btn smsticket">SMSticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ZÁŘÍ -->
+            <div class="month-group">
+                <h3 class="month-heading">Září</h3>
+                <div class="shows-list">
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">05</div>
+                            <div class="month">Zář</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Brno</h4>
+                            <p>Slavnosti Jihu · 19:30</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">12</div>
+                            <div class="month">Zář</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Klimkovice</h4>
+                            <p>Jarmark</p>
+                        </div>
+                    </div>
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">27</div>
+                            <div class="month">Zář</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Ostrava</h4>
+                            <p>Svatováclavské slavnosti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTOPAD -->
+            <div class="month-group">
+                <h3 class="month-heading">Listopad</h3>
+                <div class="shows-list">
+                    <div class="show-card fade-in">
+                        <div class="show-date">
+                            <div class="day">06</div>
+                            <div class="month">Lis</div>
+                        </div>
+                        <div class="show-info">
+                            <h4>Brno</h4>
+                            <p>Metro Music Bar · 20:00</p>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#" target="_blank" rel="noopener" class="ticket-btn smsticket">SMSticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer-copy">&copy; 2026 Hospodský Bordel. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <!-- ════════ SCRIPTS ════════ -->
+    <script>
+        // ── Hamburger Toggle ──
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        function closeMobile() {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ── Navbar Shrink on Scroll ──
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // ── Scroll Fade-In Animation ──
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

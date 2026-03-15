@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotky — Hospodský Bordel</title>
+    <meta name="description" content="Fotogalerie Hospodského Bordelu — z koncertů, zákulisí a bordelu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>body { padding-top: 80px; }</style>
+</head>
+<body>
+
+    <!-- ════════ NAVBAR ════════ -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="index.html">Hospodský Bordel</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="koncerty.html">Koncerty</a></li>
+            <li><a href="hudba.html">Hudba</a></li>
+            <li><a href="kapela.html">Kapela</a></li>
+            <li><a href="fotky.html">Fotky</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a class="nav-cta" href="vstupenky.html">Vstupenky</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html" onclick="closeMobile()">Úvod</a>
+        <a href="koncerty.html" onclick="closeMobile()">Koncerty</a>
+        <a href="hudba.html" onclick="closeMobile()">Hudba</a>
+        <a href="kapela.html" onclick="closeMobile()">Kapela</a>
+        <a href="fotky.html" onclick="closeMobile()">Fotky</a>
+        <a href="kontakt.html" onclick="closeMobile()">Kontakt</a>
+        <a class="nav-cta" href="vstupenky.html" onclick="closeMobile()">Vstupenky</a>
+    </div>
+
+    <!-- ════════ FOTKY ════════ -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-padding">
+            <div class="section-header fade-in">
+                <div class="accent-line"></div>
+                <h2>FOTKY</h2>
+            </div>
+            <div class="gallery-grid fade-in">
+                <div class="item" onclick="openLightbox('DSC04992 2-2.jpg')"><img src="thumbs/DSC04992 2-2.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC09983.jpg')"><img src="thumbs/DSC09983.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC09994.jpg')"><img src="thumbs/DSC09994.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC05943.jpg')"><img src="thumbs/DSC05943.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC07380.jpg')"><img src="thumbs/DSC07380.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC08514 2.jpg')"><img src="thumbs/DSC08514 2.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC08525.jpg')"><img src="thumbs/DSC08525.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC08600.jpg')"><img src="thumbs/DSC08600.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC04205-2.jpg')"><img src="thumbs/DSC04205-2.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC00145 2.jpg')"><img src="thumbs/DSC00145 2.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('DSC08792.jpg')"><img src="thumbs/DSC08792.jpg" alt="Hospodský Bordel"></div>
+                <div class="item" onclick="openLightbox('6-DSC06416.jpg')"><img src="thumbs/6-DSC06416.jpg" alt="Hospodský Bordel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════ LIGHTBOX ════════ -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">&#10005;</button>
+        <button class="lightbox-prev" onclick="event.stopPropagation(); changePhoto(-1)">&#8249;</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <button class="lightbox-next" onclick="event.stopPropagation(); changePhoto(1)">&#8250;</button>
+    </div>
+
+
+    <footer class="footer">
+        <p class="footer-copy">&copy; 2026 Hospodský Bordel. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <!-- ════════ SCRIPTS ════════ -->
+    <script>
+        // ── Hamburger Toggle ──
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        function closeMobile() {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ── Navbar Shrink on Scroll ──
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // ── Scroll Fade-In Animation ──
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // ── Lightbox ──
+        const photos = [
+            'DSC04992 2-2.jpg','DSC09983.jpg','DSC09994.jpg','DSC05943.jpg',
+            'DSC07380.jpg','DSC08514 2.jpg','DSC08525.jpg','DSC08600.jpg',
+            'DSC04205-2.jpg','DSC00145 2.jpg','DSC08792.jpg','6-DSC06416.jpg'
+        ];
+        let currentIndex = 0;
+
+        function openLightbox(src) {
+            currentIndex = photos.indexOf(src);
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function changePhoto(dir) {
+            currentIndex = (currentIndex + dir + photos.length) % photos.length;
+            document.getElementById('lightboxImg').src = photos[currentIndex];
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') changePhoto(1);
+            if (e.key === 'ArrowLeft') changePhoto(-1);
+        });
+    </script>
+
+</body>
+</html>
