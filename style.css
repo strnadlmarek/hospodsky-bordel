@@ -369,7 +369,7 @@ section { position: relative; }
     border-radius: 4px;
     background: transparent;
     margin-bottom: 20px;
-    width: fit-content;
+    width: 100%;
 }
 .album-cover-wrap { position: relative; flex-shrink: 0; }
 .album-meta { display: flex; flex-direction: column; }
@@ -1053,7 +1053,7 @@ section { position: relative; }
 /* ═══════════ RESPONSIVE ═══════════ */
 @media (max-width: 1024px) {
     .album-header-box {
-        width: fit-content;
+        width: 100%;
     }
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
