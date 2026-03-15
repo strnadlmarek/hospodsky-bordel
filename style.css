@@ -1140,7 +1140,7 @@ section { position: relative; }
         text-align: center;
     }
     .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 3px; margin-bottom: 6px; }
-    .album-header-box { flex-direction: row-reverse; width: 100%; }
+    .album-header-box { flex-direction: row; width: 100%; }
     .hero-ctas .btn-mobile-only { display: inline-block; }
     /* Album button visible on mobile, above Koncerty+Vstupenky, bigger */
     .hero-ctas .btn-album {
