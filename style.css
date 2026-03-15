@@ -363,12 +363,12 @@ section { position: relative; }
     display: grid;
     grid-template-columns: 95px 1fr;
     gap: 56px;
-    align-items: start;
+    align-items: stretch;
 }
-.album-cover-wrap { position: relative; }
+.album-cover-wrap { position: relative; height: 100%; }
 .album-cover {
     width: 100%;
-    aspect-ratio: 1;
+    height: 100%;
     border-radius: 4px;
     display: block;
     object-fit: cover;
