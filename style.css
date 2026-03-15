@@ -417,11 +417,8 @@ section { position: relative; }
 .tracklist li {
     display: flex;
     align-items: center;
-    padding: 13px 16px;
-    border: 2px solid #fff;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    background: transparent;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
     color: #bbb;
     font-size: 15px;
     transition: color 0.2s;
