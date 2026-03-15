@@ -1125,8 +1125,8 @@ section { position: relative; }
 
     .hero { height: calc(100svh - 51px); min-height: 520px; }
     .footer { margin-top: 0; }
-    .hero-content { padding-bottom: 28px; }
-    .hero-copy { display: block; }
+    .hero-content { padding-bottom: 0; }
+    .hero-copy { display: none; }
     .hero-content h1 { letter-spacing: 2px; }
     .btn-primary, .btn-outline {
         padding: 6px 20px;
@@ -1134,7 +1134,7 @@ section { position: relative; }
         width: 145px;
         text-align: center;
     }
-    .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+    .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 3px; margin-bottom: 6px; }
     .hero-ctas .btn-mobile-only { display: inline-block; }
     /* Album button visible on mobile, above Koncerty+Vstupenky, bigger */
     .hero-ctas .btn-album {
