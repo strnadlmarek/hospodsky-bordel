@@ -920,7 +920,7 @@ section { position: relative; }
 }
 .newsletter-block { text-align: center; }
 .newsletter-title {
-    font-size: 12px;
+    font-size: clamp(32px, 5vw, 48px);
     font-weight: 600;
     color: var(--white);
     letter-spacing: 1px;
