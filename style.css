@@ -973,7 +973,7 @@ section { position: relative; }
     display: flex;
     justify-content: center;
     gap: 14px;
-    margin-top: 20px;
+    margin-top: 4px;
 }
 .contact-socials a {
     display: flex;
