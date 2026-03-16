@@ -246,7 +246,7 @@ img { max-width: 100%; display: block; }
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 4px;
     width: 100%;
 }
 .hero-socials a {
@@ -1011,6 +1011,7 @@ section { position: relative; }
     display: flex;
     justify-content: center;
     gap: 16px;
+    margin-top: 0;
     margin-bottom: 20px;
 }
 .footer-socials a {
