@@ -607,7 +607,7 @@ section { position: relative; }
 }
 .ticket-btn {
     padding: 11px 20px;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -998,7 +998,7 @@ section { position: relative; }
 }
 .footer-follow {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
