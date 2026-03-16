@@ -270,7 +270,7 @@ img { max-width: 100%; display: block; }
 .sl-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 .sl-tt { background: #000000; }
 .sl-yt { background: #FF0000; }
-.sl-sp { background: #1DB954; }
+.sl-sp { background: #000000; }
 .sl-am { background: #FC3C44; }
 .btn-primary, .btn-outline {
     padding: 16px 22px;
@@ -988,7 +988,7 @@ section { position: relative; }
 .contact-socials .sl-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 .contact-socials .sl-tt { background: #000000; }
 .contact-socials .sl-yt { background: #FF0000; }
-.contact-socials .sl-sp { background: #1DB954; }
+.contact-socials .sl-sp { background: #000000; }
 .contact-socials .sl-am { background: #FC3C44; }
 
 /* ═══════════ FOOTER ═══════════ */
@@ -1029,7 +1029,7 @@ section { position: relative; }
 .footer-socials .sl-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 .footer-socials .sl-tt { background: #000000; }
 .footer-socials .sl-yt { background: #FF0000; }
-.footer-socials .sl-sp { background: #1DB954; }
+.footer-socials .sl-sp { background: #000000; }
 .footer-socials .sl-am { background: #FC3C44; }
 .footer-contact {
     color: #555;
@@ -1195,7 +1195,7 @@ section { position: relative; }
     .footer-socials .sl-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
     .footer-socials .sl-tt { background: #000000; }
     .footer-socials .sl-yt { background: #FF0000; }
-    .footer-socials .sl-sp { background: #1DB954; }
+    .footer-socials .sl-sp { background: #000000; }
     .footer-socials .sl-am { background: #FC3C44; }
 
     .show-card {
