@@ -1230,3 +1230,13 @@ section { position: relative; }
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (min-width: 769px) {
+    .hero-ctas .btn-album {
+        font-size: 15px;
+        padding: 9px 16px;
+    }
+    .newsletter-title {
+        font-size: 19px;
+    }
+}
