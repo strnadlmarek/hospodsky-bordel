@@ -969,6 +969,21 @@ section { position: relative; }
     white-space: nowrap;
 }
 .email-form button:hover { box-shadow: 0 0 20px var(--pink-glow); }
+.contact-socials {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 20px;
+}
+.contact-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 8px;
+    transition: opacity 0.2s;
+}
+.contact-socials a:hover { opacity: 0.75; }
 
 /* ═══════════ FOOTER ═══════════ */
 .footer {
