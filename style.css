@@ -974,6 +974,7 @@ section { position: relative; }
     justify-content: center;
     gap: 14px;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 .contact-socials a {
     display: flex;
