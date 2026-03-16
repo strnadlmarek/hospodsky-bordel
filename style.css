@@ -271,7 +271,7 @@ img { max-width: 100%; display: block; }
 .sl-tt { background: #000000; }
 .sl-yt { background: #FF0000; }
 .sl-sp { background: #1DB954; }
-.sl-am { background: #000000; }
+.sl-am { background: #FC3C44; }
 .btn-primary, .btn-outline {
     padding: 16px 22px;
     font-size: 15px;
@@ -989,7 +989,7 @@ section { position: relative; }
 .contact-socials .sl-tt { background: #000000; }
 .contact-socials .sl-yt { background: #FF0000; }
 .contact-socials .sl-sp { background: #1DB954; }
-.contact-socials .sl-am { background: #000000; }
+.contact-socials .sl-am { background: #FC3C44; }
 
 /* ═══════════ FOOTER ═══════════ */
 .footer {
@@ -1030,7 +1030,7 @@ section { position: relative; }
 .footer-socials .sl-tt { background: #000000; }
 .footer-socials .sl-yt { background: #FF0000; }
 .footer-socials .sl-sp { background: #1DB954; }
-.footer-socials .sl-am { background: #000000; }
+.footer-socials .sl-am { background: #FC3C44; }
 .footer-contact {
     color: #555;
     font-size: 14px;
@@ -1196,7 +1196,7 @@ section { position: relative; }
     .footer-socials .sl-tt { background: #000000; }
     .footer-socials .sl-yt { background: #FF0000; }
     .footer-socials .sl-sp { background: #1DB954; }
-    .footer-socials .sl-am { background: #000000; }
+    .footer-socials .sl-am { background: #FC3C44; }
 
     .show-card {
         grid-template-columns: 1fr;
