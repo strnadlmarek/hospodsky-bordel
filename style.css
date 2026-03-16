@@ -974,7 +974,7 @@ section { position: relative; }
     justify-content: center;
     gap: 14px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 40px;
 }
 .contact-socials a {
     display: flex;
@@ -1014,7 +1014,7 @@ section { position: relative; }
     justify-content: center;
     gap: 16px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 40px;
 }
 .footer-socials a {
     opacity: 0.9;
@@ -1048,7 +1048,6 @@ section { position: relative; }
     color: #fff;
     font-size: 12px;
     margin: 0;
-    margin-top: 32px;
     text-align: left;
 }
 
