@@ -1169,8 +1169,8 @@ section { position: relative; }
     .hero-copy { display: none; }
     .hero-content h1 { letter-spacing: 2px; }
     .btn-primary, .btn-outline {
-        padding: 6px 20px;
-        font-size: 12px;
+        padding: 4px 17px;
+        font-size: 9px;
         width: 145px;
         text-align: center;
     }
@@ -1185,8 +1185,8 @@ section { position: relative; }
         white-space: nowrap;
         margin-left: 0;
         flex-shrink: 0;
-        padding: 8px 18px;
-        font-size: 13px;
+        padding: 5px 15px;
+        font-size: 10px;
         letter-spacing: 1px;
     }
     .social-icon { width: 20px; height: 20px; }
