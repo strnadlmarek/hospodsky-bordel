@@ -180,7 +180,7 @@ img { max-width: 100%; display: block; }
 }
 .hero-copy {
     color: rgba(255,255,255,0.45);
-    font-size: 10px;
+    font-size: 7px;
     letter-spacing: 0.5px;
     margin: 10px 0 0;
     font-family: 'Inter', sans-serif;
@@ -442,7 +442,7 @@ section { position: relative; }
     align-items: center;
     justify-content: center;
     color: #666;
-    font-size: 10px;
+    font-size: 7px;
     transition: all 0.2s;
 }
 .tracklist li:hover .track-play {
@@ -1149,7 +1149,7 @@ section { position: relative; }
         gap: 20px;
     }
     .member-name { font-size: 15px; font-weight: 700; color: #ffffff; margin: 7px 0 0 0 !important; white-space: normal; line-height: 1.2; }
-    .member-instruments { font-size: 10px; margin: 2px 0 0 0 !important; line-height: 1.4; }
+    .member-instruments { font-size: 7px; margin: 2px 0 0 0 !important; line-height: 1.4; }
     .member-photo { width: 85%; }
 
     .email-form {
@@ -1170,7 +1170,7 @@ section { position: relative; }
     .hero-content h1 { letter-spacing: 2px; }
     .btn-primary, .btn-outline {
         padding: 4px 17px;
-        font-size: 9px;
+        font-size: 6px;
         width: 145px;
         text-align: center;
     }
@@ -1186,7 +1186,7 @@ section { position: relative; }
         margin-left: 0;
         flex-shrink: 0;
         padding: 5px 15px;
-        font-size: 10px;
+        font-size: 7px;
         letter-spacing: 1px;
     }
     .social-icon { width: 20px; height: 20px; }
