@@ -1188,7 +1188,7 @@ section { position: relative; }
         white-space: nowrap;
         margin-left: 0;
         flex-shrink: 0;
-        padding: 10px 26px;
+        padding: 6px 26px;
         font-size: 12px;
         letter-spacing: 1px;
     }
