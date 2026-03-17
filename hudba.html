@@ -61,8 +61,14 @@
                 </div>
                 <div class="album-info fade-in">
                     <ul class="tracklist">
-                        <li><span class="track-num">01</span><span class="track-name">Ležím a usínám</span><span class="track-duration">2:52</span><span class="track-play">▶</span></li>
+                        <li>
+                            <span class="track-num">01</span>
+                            <span class="track-name">Ležím a usínám</span>
+                            <span class="track-duration">2:52</span>
+                            <button class="track-play" id="btn-01" onclick="togglePlay('audio-01','btn-01')" aria-label="Přehrát">▶</button>
+                        </li>
                     </ul>
+                    <audio id="audio-01" src="lezim-a-usinam.mp3" preload="none"></audio>
                 </div>
             </div>
             <div class="video-section fade-in">
@@ -143,6 +149,21 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        function togglePlay(audioId, btnId) {
+            const audio = document.getElementById(audioId);
+            const btn = document.getElementById(btnId);
+            if (audio.paused) {
+                document.querySelectorAll('audio').forEach(a => a.pause());
+                document.querySelectorAll('.track-play').forEach(b => b.textContent = '▶');
+                audio.play();
+                btn.textContent = '⏸';
+            } else {
+                audio.pause();
+                btn.textContent = '▶';
+            }
+            audio.onended = () => { btn.textContent = '▶'; };
+        }
     </script>
 
 </body>

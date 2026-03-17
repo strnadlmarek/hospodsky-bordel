@@ -444,6 +444,9 @@ section { position: relative; }
     color: #666;
     font-size: 7px;
     transition: all 0.2s;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 .tracklist li:hover .track-play {
     border-color: var(--pink);
