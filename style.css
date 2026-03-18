@@ -50,7 +50,6 @@ h1, h2, h3, h4, .nav-logo, .btn-primary, .btn-outline, .nav-cta, .ticket-btn, .s
 }
 
 /* Handwritten accent font */
-.hand { font-family: 'Caveat', cursive; }
 
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
@@ -207,14 +206,6 @@ img { max-width: 100%; display: block; }
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
-.hero-hand-note {
-    font-family: 'Caveat', cursive;
-    font-size: 22px;
-    color: var(--pink);
-    margin-bottom: 32px;
-    transform: rotate(-2deg);
-    display: inline-block;
-}
 .hero-ctas {
     display: flex;
     gap: 10px;
@@ -333,29 +324,8 @@ section { position: relative; }
     max-width: 550px;
     margin: 0 auto;
 }
-.section-header .hand-note {
-    font-family: 'Caveat', cursive;
-    color: var(--pink);
-    font-size: 20px;
-    transform: rotate(-1.5deg);
-    display: inline-block;
-    margin-top: 8px;
-}
 
 /* Rough divider — subtle scratchy line between sections */
-.rough-divider {
-    height: 1px;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--border) 15%,
-        var(--border) 40%,
-        transparent 42%,
-        var(--border) 45%,
-        var(--border) 85%,
-        transparent 100%
-    );
-    opacity: 0.6;
-}
 
 /* ═══════════ ALBUM ═══════════ */
 .album-section { background: var(--bg-dark); }
@@ -383,20 +353,6 @@ section { position: relative; }
     background: #000;
 }
 .album-cover .placeholder-icon { font-size: 56px; margin-bottom: 12px; }
-.album-sticker {
-    position: absolute;
-    top: -12px;
-    right: -12px;
-    background: var(--pink);
-    color: var(--white);
-    font-family: 'Caveat', cursive;
-    font-size: 16px;
-    padding: 8px 14px;
-    transform: rotate(6deg);
-    border-radius: 3px;
-    box-shadow: 0 4px 16px var(--pink-glow);
-    z-index: 5;
-}
 .album-meta h3 {
     font-size: 30px;
     font-weight: 700;
@@ -451,16 +407,6 @@ section { position: relative; }
 .tracklist li:hover .track-play {
     border-color: var(--pink);
     color: var(--pink);
-}
-.spotify-embed {
-    margin-top: 24px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-.spotify-embed iframe {
-    width: 100%;
-    border: none;
-    border-radius: 8px;
 }
 .video-section {
     margin-top: 48px;
@@ -763,20 +709,6 @@ section { position: relative; }
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 16px;
-}
-.about-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(232,24,90,0.1);
-    border: 1px solid rgba(232,24,90,0.2);
-    border-radius: 3px;
-    padding: 8px 16px;
-    color: var(--pink);
-    font-weight: 600;
-    font-size: 14px;
-    margin-top: 8px;
-    font-family: 'Inter', sans-serif;
 }
 
 /* ═══════════ GALLERY ═══════════ */
