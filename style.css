@@ -1172,7 +1172,7 @@ section { position: relative; }
     .hero-copy { display: none; }
     .hero-content h1 { letter-spacing: 2px; }
     .btn-primary, .btn-outline {
-        padding: 6px 20px;
+        padding: 6px 32px;
         font-size: 12px;
         width: 145px;
         text-align: center;
