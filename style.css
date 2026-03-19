@@ -224,12 +224,13 @@ img { max-width: 100%; display: block; }
 /* Desktop: hide Koncerty + Vstupenky, show only OUT NOW frame */
 .hero-ctas .btn-mobile-only { display: none; }
 .hero-ctas-row { display: none; }
-/* OUT NOW hero frame */
+/* OUT NOW hero text only */
 .hero-outnow {
     display: block;
     width: calc(100% - 160px);
-    padding: 14px 28px;
-    border: 2px solid var(--white);
+    padding: 4px 0;
+    border: none;
+    background: transparent;
     color: var(--white);
     text-decoration: none;
     text-align: center;
@@ -238,10 +239,11 @@ img { max-width: 100%; display: block; }
     font-weight: 900;
     letter-spacing: 3px;
     font-family: inherit;
-    transition: background 0.25s, color 0.25s;
+    transition: opacity 0.25s;
 }
 .hero-outnow:hover {
-    background: rgba(255,255,255,0.12);
+    opacity: 0.75;
+    background: transparent;
 }
 .hero-socials {
     display: flex;
