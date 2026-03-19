@@ -225,17 +225,17 @@ img { max-width: 100%; display: block; }
 .hero-ctas .btn-mobile-only { display: none; }
 /* OUT NOW hero frame */
 .hero-outnow {
-    display: block;
-    width: calc(100% - 160px);
-    padding: 20px 32px;
+    display: inline-block;
+    width: auto;
+    padding: 11px 28px;
     border: 2px solid var(--white);
     color: var(--white);
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-size: clamp(18px, 2.6vw, 30px);
+    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-family: inherit;
     transition: background 0.25s, color 0.25s;
 }
