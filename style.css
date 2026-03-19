@@ -228,9 +228,9 @@ img { max-width: 100%; display: block; }
 .hero-outnow {
     display: block;
     width: calc(100% - 160px);
-    padding: 4px 0;
+    padding: 14px 28px;
     border: none;
-    background: transparent;
+    background: rgba(255,255,255,0.10);
     color: var(--white);
     text-decoration: none;
     text-align: center;
