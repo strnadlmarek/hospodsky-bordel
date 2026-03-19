@@ -1149,7 +1149,7 @@ section { position: relative; }
 
     .hero { height: calc(100svh - 51px); min-height: 520px; }
     .footer { margin-top: 0; }
-    .hero-content { padding-bottom: 0; }
+    .hero-content { padding-bottom: 0; display: flex; flex-direction: column; align-items: center; }
     .hero-copy { display: none; }
     .hero-content h1 { letter-spacing: 2px; }
     .btn-primary, .btn-outline {
@@ -1158,7 +1158,7 @@ section { position: relative; }
         width: 145px;
         text-align: center;
     }
-    .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: auto; margin-bottom: 16px; }
     .hero-ctas-row { display: flex; flex-direction: row; justify-content: center; gap: 10px; width: 100%; }
     .hero-ctas-row .btn-mobile-only { width: auto; }
     .album-header-box { flex-direction: row; width: 100%; }
