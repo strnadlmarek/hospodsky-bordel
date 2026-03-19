@@ -211,7 +211,7 @@ img { max-width: 100%; display: block; }
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
 }
 /* Smaller buttons inside hero to fit the space */
 .hero-ctas .btn-primary,
