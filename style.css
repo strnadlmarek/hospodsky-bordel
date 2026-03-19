@@ -582,18 +582,16 @@ section { position: relative; }
     color: #888;
     cursor: not-allowed;
     pointer-events: none;
-}
-.smsticket-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
 }
 .coming-soon-label {
-    font-size: 10px;
-    color: #888;
+    font-size: 9px;
+    color: #999;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: inherit;
 }
 
