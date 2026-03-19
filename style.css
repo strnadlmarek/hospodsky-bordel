@@ -1152,11 +1152,20 @@ section { position: relative; }
         width: 145px;
         text-align: center;
     }
-    .hero-ctas { display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .hero-ctas { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; margin-bottom: 24px; }
     .album-header-box { flex-direction: row; width: 100%; }
     .hero-ctas .btn-mobile-only { display: inline-block; }
-    /* Hide OUT NOW on mobile */
-    .hero-outnow { display: none; }
+    /* OUT NOW as plain text, no border, full row above buttons */
+    .hero-outnow {
+        display: block;
+        order: -1;
+        width: 100%;
+        border: none;
+        background: transparent;
+        font-size: 13px;
+        padding: 0 0 6px;
+        letter-spacing: 2px;
+    }
     .btn-primary, .btn-outline {
         width: auto;
         padding: 10px 24px;
