@@ -245,6 +245,9 @@ img { max-width: 100%; display: block; }
     opacity: 0.75;
     background: transparent;
 }
+/* Desktop: spans inline as one line */
+.outnow-title, .outnow-sub { display: inline; }
+.outnow-title::after { content: " "; }
 .hero-socials {
     display: flex;
     gap: 16px;
@@ -1155,24 +1158,46 @@ section { position: relative; }
         width: 145px;
         text-align: center;
     }
-    .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px; }
-    .hero-ctas-row { display: none; }
+    .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .hero-ctas-row { display: flex; flex-direction: row; justify-content: center; gap: 10px; width: 100%; }
     .album-header-box { flex-direction: row; width: 100%; }
-    .hero-ctas .btn-mobile-only { display: none; }
-    /* OUT NOW — bigger and bolder on mobile */
+    .hero-ctas .btn-mobile-only { display: inline-block; }
+    /* OUT NOW — plain text, two lines, no border */
     .hero-outnow {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        font-size: 20px;
+        border: none;
+        background: transparent;
+        padding: 0;
+        gap: 2px;
+        text-decoration: none;
+    }
+    .outnow-title {
+        font-size: 22px;
         font-weight: 900;
-        padding: 11px 28px;
+        letter-spacing: 3px;
         text-transform: uppercase;
+        color: var(--white);
         font-family: inherit;
     }
-    .hero-outnow:active,
-    .hero-outnow:hover {
-        background: rgba(255,255,255,0.12);
+    .outnow-sub {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
         color: var(--white);
+        font-family: inherit;
+    }
+    .hero-outnow:active .outnow-title,
+    .hero-outnow:active .outnow-sub {
+        opacity: 0.7;
+    }
+    .btn-primary, .btn-outline {
+        width: auto;
+        padding: 10px 40px;
+        font-size: 12px;
     }
     .social-icon { width: 20px; height: 20px; }
     .hero-socials a { padding: 6px; border-radius: 8px; }
