@@ -581,6 +581,11 @@ section { position: relative; }
     cursor: pointer;
     transition: all 0.3s;
 }
+.tickets-center {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 .ticket-btn.smsticket {
     background: var(--pink);
     color: var(--white);
