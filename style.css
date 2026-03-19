@@ -1155,7 +1155,7 @@ section { position: relative; }
     .hero-ctas { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; margin-bottom: 24px; }
     .album-header-box { flex-direction: row; width: 100%; }
     .hero-ctas .btn-mobile-only { display: inline-block; }
-    /* OUT NOW as plain text, no border, full row above buttons */
+    /* OUT NOW as clickable link, no border, full row above buttons */
     .hero-outnow {
         display: block;
         order: -1;
@@ -1165,6 +1165,10 @@ section { position: relative; }
         font-size: 13px;
         padding: 0 0 6px;
         letter-spacing: 2px;
+        color: var(--white);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        pointer-events: auto;
     }
     .btn-primary, .btn-outline {
         width: auto;
