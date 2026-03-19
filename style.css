@@ -226,8 +226,8 @@ img { max-width: 100%; display: block; }
 .hero-ctas-row { display: none; }
 /* OUT NOW hero frame */
 .hero-outnow {
-    display: inline-block;
-    width: auto;
+    display: block;
+    width: calc(100% - 160px);
     padding: 11px 28px;
     border: 2px solid var(--white);
     color: var(--white);
