@@ -570,6 +570,25 @@ section { position: relative; }
     color: var(--white);
 }
 .ticket-btn.smsticket:hover { box-shadow: 0 0 16px var(--pink-glow); }
+.ticket-btn.smsticket-soon {
+    background: #888;
+    color: #ccc;
+    cursor: default;
+    pointer-events: none;
+}
+.smsticket-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.coming-soon-label {
+    font-size: 10px;
+    color: #888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: inherit;
+}
 
 /* ═══════════ ABOUT ═══════════ */
 .about-section { background: var(--bg-dark); }
