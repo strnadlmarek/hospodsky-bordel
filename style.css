@@ -1159,11 +1159,11 @@ section { position: relative; }
         text-align: center;
     }
     .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 24px; }
-    .hero-ctas-row { display: flex; flex-direction: row; gap: 10px; width: 100%; }
-    .hero-ctas-row .btn-mobile-only { flex: 1; text-align: center; }
+    .hero-ctas-row { display: flex; flex-direction: row; justify-content: center; gap: 10px; width: 100%; }
+    .hero-ctas-row .btn-mobile-only { width: auto; }
     .album-header-box { flex-direction: row; width: 100%; }
     .hero-ctas .btn-mobile-only { display: inline-block; }
-    /* OUT NOW — same as desktop, one line */
+    /* OUT NOW — full width bordered button */
     .hero-outnow {
         display: block;
         width: 100%;
@@ -1185,8 +1185,8 @@ section { position: relative; }
     .outnow-title::after { content: " "; }
     .hero-outnow:active { opacity: 0.75; }
     .btn-primary, .btn-outline {
-        width: 100%;
-        padding: 11px 16px;
+        width: auto;
+        padding: 10px 40px;
         font-size: 12px;
     }
     .social-icon { width: 20px; height: 20px; }
