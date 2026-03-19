@@ -223,6 +223,7 @@ img { max-width: 100%; display: block; }
 }
 /* Desktop: hide Koncerty + Vstupenky, show only OUT NOW frame */
 .hero-ctas .btn-mobile-only { display: none; }
+.hero-ctas-row { display: none; }
 /* OUT NOW hero frame */
 .hero-outnow {
     display: inline-block;
@@ -1152,18 +1153,19 @@ section { position: relative; }
         width: 145px;
         text-align: center;
     }
-    .hero-ctas { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; margin-bottom: 24px; }
+    .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px; }
+    .hero-ctas-row { display: flex; flex-direction: row; justify-content: center; gap: 10px; width: 100%; }
     .album-header-box { flex-direction: row; width: 100%; }
     .hero-ctas .btn-mobile-only { display: inline-block; }
-    /* OUT NOW as clickable link, no border, full row above buttons */
+    /* OUT NOW as bordered frame button on mobile, same as desktop */
     .hero-outnow {
         display: block;
-        order: -1;
+        order: unset;
         width: 100%;
-        border: none;
+        border: 2px solid var(--white);
         background: transparent;
-        font-size: 13px;
-        padding: 6px 0;
+        font-size: 12px;
+        padding: 10px 20px;
         letter-spacing: 2px;
         color: var(--white);
         font-weight: 700;
@@ -1171,10 +1173,11 @@ section { position: relative; }
         pointer-events: auto;
         transition: background 0.2s, color 0.2s;
         border-radius: 3px;
+        text-align: center;
     }
     .hero-outnow:active,
     .hero-outnow:hover {
-        background: var(--pink);
+        background: rgba(255,255,255,0.12);
         color: var(--white);
     }
     .btn-primary, .btn-outline {
