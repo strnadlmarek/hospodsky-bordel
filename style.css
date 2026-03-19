@@ -221,17 +221,26 @@ img { max-width: 100%; display: block; }
     letter-spacing: 1.5px;
     border-radius: 3px;
 }
-/* Desktop: hide Koncerty + Vstupenky, show only album button */
+/* Desktop: hide Koncerty + Vstupenky, show only OUT NOW frame */
 .hero-ctas .btn-mobile-only { display: none; }
-/* Album button — 3cm (113px) shorter on each side than before */
-.hero-ctas .btn-album {
-    width: calc(100% - 202px);
-    margin-left: 0;
-    flex-shrink: 0;
-    padding: 13px 24px;
-    font-size: 22px;
-    letter-spacing: 2px;
+/* OUT NOW hero frame */
+.hero-outnow {
+    display: block;
+    width: calc(100% - 160px);
+    padding: 20px 32px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(18px, 2.6vw, 30px);
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: inherit;
+    transition: background 0.25s, color 0.25s;
+}
+.hero-outnow:hover {
+    background: rgba(255,255,255,0.12);
 }
 .hero-socials {
     display: flex;
@@ -1136,17 +1145,13 @@ section { position: relative; }
     .hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 3px; margin-bottom: 6px; }
     .album-header-box { flex-direction: row; width: 100%; }
     .hero-ctas .btn-mobile-only { display: inline-block; }
-    /* Album button visible on mobile, above Koncerty+Vstupenky, bigger */
-    .hero-ctas .btn-album {
-        display: inline-block;
+    /* OUT NOW frame on mobile */
+    .hero-outnow {
         order: -1;
-        width: auto;
-        white-space: nowrap;
-        margin-left: 0;
-        flex-shrink: 0;
-        padding: 6px 26px;
-        font-size: 12px;
-        letter-spacing: 1px;
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 13px;
+        letter-spacing: 2px;
     }
     .social-icon { width: 20px; height: 20px; }
     .hero-socials a { padding: 6px; border-radius: 8px; }
@@ -1191,10 +1196,6 @@ section { position: relative; }
 }
 
 @media (min-width: 769px) {
-    .hero-ctas .btn-album {
-        font-size: 15px;
-        padding: 9px 16px;
-    }
     .newsletter-title {
         font-size: 19px;
     }
