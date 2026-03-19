@@ -1163,12 +1163,19 @@ section { position: relative; }
         border: none;
         background: transparent;
         font-size: 13px;
-        padding: 0 0 6px;
+        padding: 6px 0;
         letter-spacing: 2px;
         color: var(--white);
-        text-decoration: underline;
-        text-underline-offset: 4px;
+        font-weight: 700;
+        text-decoration: none;
         pointer-events: auto;
+        transition: background 0.2s, color 0.2s;
+        border-radius: 3px;
+    }
+    .hero-outnow:active,
+    .hero-outnow:hover {
+        background: var(--pink);
+        color: var(--white);
     }
     .btn-primary, .btn-outline {
         width: auto;
