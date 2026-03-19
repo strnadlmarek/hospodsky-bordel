@@ -176,9 +176,6 @@ img { max-width: 100%; display: block; }
     max-width: 800px;
     width: 100%;
     padding: 0 24px 36px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .hero-copy {
     color: rgba(255,255,255,0.45);
@@ -214,7 +211,6 @@ img { max-width: 100%; display: block; }
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: auto;
     margin-bottom: 6px;
 }
 /* Smaller buttons inside hero to fit the space */
