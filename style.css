@@ -229,7 +229,7 @@ img { max-width: 100%; display: block; }
     display: block;
     width: calc(100% - 160px);
     padding: 14px 28px;
-    border: none;
+    border: 2px solid var(--white);
     background: rgba(255,255,255,0.10);
     color: var(--white);
     text-decoration: none;
