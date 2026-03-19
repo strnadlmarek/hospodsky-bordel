@@ -571,9 +571,9 @@ section { position: relative; }
 }
 .ticket-btn.smsticket:hover { box-shadow: 0 0 16px var(--pink-glow); }
 .ticket-btn.smsticket-soon {
-    background: #888;
-    color: #ccc;
-    cursor: default;
+    background: #c8c8c8;
+    color: #888;
+    cursor: not-allowed;
     pointer-events: none;
 }
 .smsticket-wrap {
