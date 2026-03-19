@@ -1167,7 +1167,7 @@ section { position: relative; }
         display: block;
         width: 100%;
         background: rgba(255,255,255,0.10);
-        border: none;
+        border: 2px solid var(--white);
         padding: 14px 28px;
         text-align: center;
         text-transform: uppercase;
