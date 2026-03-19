@@ -324,6 +324,13 @@ section { position: relative; }
     max-width: 550px;
     margin: 0 auto;
 }
+.section-subheading {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 6px;
+}
 
 /* Rough divider — subtle scratchy line between sections */
 
