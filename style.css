@@ -1175,3 +1175,12 @@ section { position: relative; }
         font-size: 19px;
     }
 }
+
+.contact-box {
+    display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    padding: 24px 36px;
+    text-align: center;
+    margin: 0 auto;
+}
